@@ -1,0 +1,6 @@
+[29.08.14 10:22:57] Tomas Pavelka: The designer would like this to be one gallery.  He would like the photos to fade in/out instead of slide.  Since this is a responsive site, he would like the gallery to drop from 3 circles to 2 to 1 (on mobile).
+
+If there are 3 circles, the next load of images will replace all 3 photos.  If there are 2 circle, it will replace the 2 circles with new photos.
+
+We would like to make this as easy as possible to update the slideshow with new photos:  Can we make the border texture a background image with a border radius on either/both the slideshow image and the circle?  This will allow us to only have to add a new photo and the CSS will do the rest.
+[29.08.14 10:23:05] Tomas Pavelka: PSD - https://dl.dropboxusercontent.com/u/558782/Aleah%20Arabians.zip
