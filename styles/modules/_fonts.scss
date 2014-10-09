@@ -12,3 +12,10 @@
     @extend %osvald;
     font-weight: 700;
 }
+
+%ir{
+    overflow: hidden;
+    text-indent: -999px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}

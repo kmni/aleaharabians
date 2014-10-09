@@ -1,0 +1,28 @@
+.banner-wrapper{
+    height: 539px;
+    background-image: image-url("banner/bg.jpg");
+}
+
+.banner__title,
+.banner__claim{
+    @extend %ir;
+    position: absolute;
+    left: 50%;
+    z-index: 777;
+}
+
+.banner__title{
+    width: 343px;
+    height: 206px;
+    margin-left: -171px;
+    top: -63px;
+    background-image: image-url("banner/logo.png");
+}
+
+.banner__claim{
+    width: 680px;
+    height: 222px;
+    margin-left: -340px;
+    top: 155px;
+    background-image: image-url("banner/claim.png");
+}
