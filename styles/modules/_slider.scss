@@ -1,0 +1,36 @@
+.slider-wrapper{
+    position: absolute;
+    width: 900px;
+    height: 149px;
+    left: 50%;
+    top: 0;
+    margin-left: -450px;
+}
+
+.slider{
+    position: absolute;
+    width: 900px;
+    top: -150px;
+    left: 0;
+}
+
+.slideshow{
+    @include cf;
+    width: 2000em;
+    height: 299px;
+}
+
+.slider__page{
+    display: block;
+    float: left;
+    width: 900px;
+    height: 299px;
+    font-size: 0;
+}
+
+.slider__item{
+    display: inline-block;
+    width: 299px;
+    height: 299px;
+    margin-right: 1px;
+}
