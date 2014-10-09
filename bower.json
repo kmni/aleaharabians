@@ -1,0 +1,20 @@
+{
+  "name": "aleah",
+  "version": "0.0.1",
+  "authors": [
+    "Tomas -kozleek- Musiol (tomas.musiol@gmail.com)"
+  ],
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components"
+  ],
+  "dependencies":{
+    "jquery": "*"
+  }
+}
