@@ -1,0 +1,65 @@
+.footer-wrapper{
+    height: 216px;
+    background-image: image-url("footer/bg.png");
+}
+
+.footer__info{
+    position: absolute;
+    left: 60px;
+    top: 67px;
+}
+
+.footer__title{
+    @extend %osvald-light;
+    font-size: 24px;
+    color: white;
+}
+
+.footer__menu{
+    @include cf;
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-size: 0;
+}
+
+.footer__menu__item,
+.footer__menu__link{
+    display: inline-block;
+    height: 100%;
+}
+
+.footer__menu__item{
+    @extend %osvald-light;
+    height: 30px;
+    font-size: 18px;
+    margin-right: 25px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.footer__menu__link{
+    line-height: 30px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer__address{
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    text-align: right;
+    @extend %osvald-light;
+
+    address{
+        color: #fff;
+        font-size: 18px;
+        font-style: normal;
+        margin-bottom: 10px;
+    }
+}
+
+.footer__copyright{
+    color: #005458;
+    font-size: 16px;
+}

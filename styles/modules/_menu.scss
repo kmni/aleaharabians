@@ -1,0 +1,48 @@
+.menu-wrapper{
+    height: 76px;
+    background-image: image-url("menu/bg.jpg")
+}
+
+.menu{
+    @include cf;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 50%;
+    font-size: 0;
+}
+
+.menu--left{
+    padding-left: 65px;
+    text-align: left;
+}
+
+.menu--right{
+    padding-right: 65px;
+    text-align: right;
+}
+
+.menu__item,
+.menu__link{
+    display: inline-block;
+    height: 100%;
+}
+
+.menu__item{
+    @extend %osvald-light;
+    height: 76px;
+    font-size: 18px;
+    padding: 0 15px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.menu__link{
+    line-height: 76px;
+    color: inherit;
+    text-decoration: none;
+
+    .has-submenu &{
+        background: image-url("menu/has-submenu.png") no-repeat right 55px;
+    }
+}

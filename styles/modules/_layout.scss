@@ -27,7 +27,18 @@ p{
 // ====================================
 
 @include breakpoint($bp--s-up) {
-    .envelope{
-        padding: 0 4em;
-    }
+}
+
+.is-envelope{
+    width: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+.is-content{
+    width: 1000px;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
 }
