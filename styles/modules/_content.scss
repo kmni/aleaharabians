@@ -1,0 +1,33 @@
+.contenthp-wrapper{
+    background: image-url("content/divider.png") no-repeat center 0;
+    padding: 55px 45px 45px 45px;
+}
+
+.contenthp{
+    width: 480px;
+
+    h2{
+        @extend %osvald;
+        font-size: 24px;
+        color: #008f95;
+        margin-bottom: 20px;
+    }
+
+    p{
+        font-size: 18px;
+        line-height: 1.5em;
+        font-family: "Georgia";
+        font-style: italic;
+
+        &.read-more{
+            margin-top: 20px;
+            font-style: normal;
+
+            a{
+                @extend %osvald;
+                color: #7a7500;
+                text-decoration: none;
+            }
+        }
+    }
+}
