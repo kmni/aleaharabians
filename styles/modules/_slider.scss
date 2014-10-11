@@ -3,9 +3,9 @@
     margin-bottom: 30px;
 }
 
-.slider{
+.slider-w{
     position: absolute;
-    width: 900px;
+    width: 920px;
     height: 300px;
     top: -150px;
     left: 50%;
@@ -14,18 +14,11 @@
 }
 
 .slideshow{
-    @include cf;
-    width: 2000em;
-    height: 299px;
-    position: relative;
+    margin: 0;
+    padding: 0;
 }
 
 .slider__page{
-    display: block;
-    float: left;
-    width: 900px;
-    height: 299px;
-    font-size: 0;
 }
 
 .slider__item{

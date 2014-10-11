@@ -35,13 +35,13 @@ $(".fancybox-video").click(function() {
 // slider at homepage
 // ====================================
 
-if( $(".js-slider").length > 0 ){
-    $('.js-slider').jcarousel({
-        wrap: 'circular'
-    });
-    $('.js-slider').jcarouselAutoscroll({
-        interval: 5000
-    });
+if( $(".slider").length > 0 ){
+  $('.slider').bjqs({
+    height      : 299,
+    width       : 920,
+    showcontrols: false,
+    showmarkers: false
+  });
 }
 
 // submenu

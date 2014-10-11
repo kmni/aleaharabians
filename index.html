@@ -9,6 +9,7 @@
 
         <meta name="author" content="code: Tomas -kozleek- Musiol (tomas.musiol@gmail.com)">
         <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="other_components/bjqs/bjqs.css" />
         <link rel="stylesheet" href="styles/style.min.css" />
     </head>
 <body class="is-homepage">
@@ -74,9 +75,10 @@
             <!-- ++++++++++++++++++++++++ -->
 
             <div class="slider-wrapper">
-                <div class="slider js-slider">
-                    <div class="slideshow">
-                        <div class="slider__page">
+            <div class="slider-w">
+                <div class="slider ">
+                    <ul class="slideshow bjqs js-slider">
+                        <li class="slider__page">
                             <div class="slider__item">
                                 <div class="slider__mask">
                                     <img src="images/slider/slide.png" />
@@ -92,26 +94,27 @@
                                     <img src="images/slider/slide.png" />
                                 </div>
                             </div>
-                        </div>
-                        <div class="slider__page">
+                        </li>
+                        <li class="slider__page">
                             <div class="slider__item">
                                 <div class="slider__mask">
-                                    <img src="images/slider/slide.png" />
+                                    <img src="images/slider/slide2.png" />
                                 </div>
                             </div>
                             <div class="slider__item">
                                 <div class="slider__mask">
-                                    <img src="images/slider/slide.png" />
+                                    <img src="images/slider/slide2.png" />
                                 </div>
                             </div>
                             <div class="slider__item">
                                 <div class="slider__mask">
-                                    <img src="images/slider/slide.png" />
+                                    <img src="images/slider/slide2.png" />
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>  <!-- /slider -->
+            </div>  <!-- /slider-w -->
             </div>  <!-- /slider-wrapper -->
 
             <!-- ++++++++++++++++++++++++ -->
@@ -164,6 +167,7 @@
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/jcarousel/dist/jquery.jcarousel.min.js"></script>
 <script src="bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
+<script src="other_components/bjqs/bjqs.min.js"></script>
 <script src="scripts/custom.js"></script>
 
 </html>
