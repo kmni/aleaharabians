@@ -3,6 +3,10 @@
     padding-bottom: 30px;
     background: image-url("horses/divider.png") no-repeat left bottom;
     @include cf;
+
+    &:last-child{
+        background: none;
+    }
 }
 
 .horses__item__col{
