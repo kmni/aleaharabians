@@ -43,6 +43,10 @@
     padding: 0 15px;
     color: white;
     text-transform: uppercase;
+    background: image-url("menu/divider.png") no-repeat right center;
+    &:last-child{
+        background: none;
+    }
 }
 
 .menu__link{
