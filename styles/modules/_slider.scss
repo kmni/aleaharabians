@@ -6,15 +6,18 @@
 .slider{
     position: absolute;
     width: 900px;
+    height: 300px;
     top: -150px;
     left: 50%;
     margin-left: -450px;
+    overflow: hidden;
 }
 
 .slideshow{
     @include cf;
     width: 2000em;
     height: 299px;
+    position: relative;
 }
 
 .slider__page{

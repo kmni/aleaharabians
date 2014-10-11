@@ -1,20 +1,26 @@
 {
-  "name": "aleah",
+  "name": "coppleshowhorses",
   "version": "0.0.1",
   "authors": [
-    "Tomas -kozleek- Musiol (tomas.musiol@gmail.com)"
+    "Tomas Musiol <tomas.musiol@gmail.com>"
   ],
-  "description": "",
-  "keywords": [],
+  "description": "Custom template",
+  "keywords": [
+    "angular"
+  ],
   "license": "MIT",
   "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-    "app/bower_components"
+    "app/bower_components",
+    "test",
+    "tests"
   ],
-  "dependencies":{
-    "jquery": "*"
+  "dependencies": {
+    "jquery": "*",
+    "jcarousel": "~0.3.1",
+    "fancybox": "~2.1.5"
   }
 }
