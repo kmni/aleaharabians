@@ -1,28 +1,13 @@
-.banner-wrapper{
+.banner-hp-wrapper{
     height: 539px;
-    background-image: image-url("banner/bg.jpg");
+    background-image: image-url("banner/bg-hp.jpg");
 }
 
-.banner__title,
-.banner__claim{
-    @extend %ir;
-    position: absolute;
-    left: 50%;
-    z-index: 777;
+.banner-page-wrapper{
+    background: image-url("content/bg.png") repeat 0 0;
 }
 
-.banner__title{
-    width: 343px;
-    height: 206px;
-    margin-left: -171px;
-    top: -63px;
-    background-image: image-url("banner/logo.png");
-}
-
-.banner__claim{
-    width: 680px;
-    height: 222px;
-    margin-left: -340px;
-    top: 155px;
-    background-image: image-url("banner/claim.png");
+.banner-page{
+    height: 155px;
+    background: image-url("banner/bg.jpg") no-repeat 0 0;
 }

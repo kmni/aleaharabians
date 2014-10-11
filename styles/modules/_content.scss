@@ -1,9 +1,16 @@
-.contenthp-wrapper{
+%content{
+
+}
+
+// content homepege
+// ====================================
+
+.content-hp-wrapper{
     background: image-url("content/divider.png") no-repeat center 0;
     padding: 55px 45px 45px 45px;
 }
 
-.contenthp{
+.content-hp{
     width: 480px;
 
     h2{
@@ -30,4 +37,34 @@
             }
         }
     }
+}
+
+// content standard page
+// ====================================
+
+.content-page{
+    width: 684px;
+    padding-top: 20px;
+    padding-left: 40px;
+
+    img{
+        margin-bottom: 20px;
+    }
+
+    p{
+        font-size: 18px;
+        line-height: 1.5em;
+        font-family: "Georgia";
+        font-style: italic;
+        padding: 0px 52px 20px 52px;
+    }
+}
+
+.content__title{
+    font-size: 48px;
+    @extend %osvald;
+    color: #008f95;
+    padding-bottom: 25px;
+    padding-left: 52px;
+    background: image-url("content/bg-title.png") repeat-x 0 bottom;
 }

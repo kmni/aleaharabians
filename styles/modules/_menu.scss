@@ -1,23 +1,31 @@
 .menu-wrapper{
     height: 76px;
-    background-image: image-url("menu/bg.jpg")
+    background-image: image-url("menu/bg.jpg");
+    .is-homepage &{
+        background-image: image-url("menu/bg-hp.jpg");
+    }
 }
 
 .menu{
     @include cf;
     margin: 0;
     padding: 0;
-    float: left;
     width: 50%;
     font-size: 0;
 }
 
+.menu--wide{
+    width: 100%;
+}
+
 .menu--left{
+    float: left;
     padding-left: 65px;
     text-align: left;
 }
 
 .menu--right{
+    float: right;
     padding-right: 65px;
     text-align: right;
 }
@@ -44,5 +52,10 @@
 
     .has-submenu &{
         background: image-url("menu/has-submenu.png") no-repeat right 55px;
+    }
+
+    .is-active &,
+    &:hover{
+        color: #fbc656;
     }
 }

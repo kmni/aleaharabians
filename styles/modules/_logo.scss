@@ -1,0 +1,31 @@
+.logo,
+.claim{
+    @extend %ir;
+    position: absolute;
+    left: 50%;
+    z-index: 777;
+}
+
+.logo--hp{
+    width: 343px;
+    height: 206px;
+    margin-left: -171px;
+    top: -63px;
+    background-image: image-url("banner/logo-hp.png");
+}
+
+.logo--page{
+    width: 283px;
+    height: 174px;
+    top: -63px;
+    left: 12px;
+    background-image: image-url("banner/logo.png");
+}
+
+.claim{
+    width: 680px;
+    height: 222px;
+    margin-left: -340px;
+    top: 155px;
+    background-image: image-url("banner/claim.png");
+}
