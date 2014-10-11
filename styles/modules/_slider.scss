@@ -33,4 +33,14 @@
     width: 299px;
     height: 299px;
     margin-right: 1px;
+    background: image-url("slider/bg.png") no-repeat center center;
+}
+
+.slider__mask{
+    width: 263px;
+    height: 263px;
+    @include border-radius(263px);
+    @include background-clip(padding-box);
+    overflow: hidden;
+    margin: 18px;
 }
