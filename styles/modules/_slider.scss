@@ -2,7 +2,7 @@
     display: none;
     height: 149px;
     margin-bottom: 30px;
-    @include breakpoint($bp--l-up) {
+    @include breakpoint($bp--s-up) {
         display: block;
     }
 }
@@ -12,9 +12,11 @@
     width: 920px;
     height: 300px;
     top: -150px;
-    left: 50%;
-    margin-left: -450px;
     overflow: hidden;
+    @include breakpoint($bp--l-up) {
+        left: 50%;
+        margin-left: -450px;
+    }
 }
 
 .slideshow{
@@ -29,8 +31,12 @@
     display: inline-block;
     width: 299px;
     height: 299px;
-    margin-right: 1px;
+    margin: 0 45px;
     background: image-url("slider/bg.png") no-repeat center center;
+    @include breakpoint($bp--l-up) {
+        margin: 0;
+        margin-right: 1px;
+    }
 }
 
 .slider__mask{

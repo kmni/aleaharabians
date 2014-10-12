@@ -1,14 +1,14 @@
 .logo,
 .claim{
     @extend %ir;
+}
+
+.logo{
     @include breakpoint($bp--l-up) {
         position: absolute;
         left: 50%;
         z-index: 777;
     }
-}
-
-.logo{
     a{
         text-indent: -999px;
         display: block;
@@ -66,8 +66,13 @@
     height: 222px;
     margin-left: -340px;
     top: 155px;
+    position: absolute;
+    left: 50%;
+    z-index: 777;
+
     background-image: image-url("banner/claim.png");
-    @include breakpoint($bp--l-up) {
+
+    @include breakpoint($bp--s-up) {
         display: block;
     }
 }
