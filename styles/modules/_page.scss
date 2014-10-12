@@ -3,25 +3,37 @@
 }
 
 .is-homepage .page{
-    background: image-url("animals/hp.png") no-repeat 550px bottom;
+    @include breakpoint($bp--m-up) {
+        background: image-url("animals/hp.png") no-repeat 550px bottom;
+    }
 }
 
 .is-horses .page-wrapper{
-    background: image-url("animals/horses.png") no-repeat right top;
+    @include breakpoint($bp--m-up) {
+        background: image-url("animals/horses.png") no-repeat right top;
+    }
 }
 
 .is-about .page-wrapper{
-    background: image-url("animals/horses.png") no-repeat right top;
+    @include breakpoint($bp--m-up) {
+        background: image-url("animals/horses.png") no-repeat right top;
+    }
 }
 
 .is-contact .page-wrapper{
-    background: image-url("animals/contact.png") no-repeat center 40px;
+    @include breakpoint($bp--m-up) {
+        background: image-url("animals/contact.png") no-repeat center 40px;
+    }
 }
 
 .is-news .page-wrapper{
-    background: image-url("animals/news.png") no-repeat right 0;
+    @include breakpoint($bp--m-up) {
+        background: image-url("animals/news.png") no-repeat right 0;
+    }
 }
 
 .is-gallery .page-wrapper{
-    background: image-url("animals/gallery.png") no-repeat center 0;
+    @include breakpoint($bp--m-up) {
+        background: image-url("animals/gallery.png") no-repeat center 0;
+    }
 }

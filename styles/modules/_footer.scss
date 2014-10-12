@@ -33,9 +33,15 @@
     @extend %osvald-light;
     height: 30px;
     font-size: 18px;
-    margin-right: 25px;
     color: white;
+    margin-right: 10px;
     text-transform: uppercase;
+    @include breakpoint($bp--s-up) {
+        margin-right: 15px;
+    }
+    @include breakpoint($bp--l-up) {
+        margin-right: 25px;
+    }
 }
 
 .footer__menu__link{

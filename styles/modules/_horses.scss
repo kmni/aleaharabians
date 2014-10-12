@@ -10,16 +10,20 @@
 }
 
 .horses__item__col{
+    padding: 20px 40px;
     &.is-primary{
-        float: right;
-        width: 630px;
-        padding: 20px;
-        padding-right: 0;
+        @include breakpoint($bp--l-up) {
+            float: right;
+            width: 630px;
+            padding-right: 0;
+        }
     }
     &.is-secondary{
-        float: left;
-        width: 370px;
-        padding-left: 10px;
+        @include breakpoint($bp--l-up) {
+            float: left;
+            width: 370px;
+            padding-left: 10px;
+        }
     }
 }
 

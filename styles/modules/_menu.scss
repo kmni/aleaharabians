@@ -1,17 +1,34 @@
 .menu-wrapper{
     height: 76px;
-    background-image: image-url("menu/bg.jpg");
+    background-image: image-url("menu/bg-m.jpg");
+
+    @include breakpoint($bp--l-up) {
+        background-image: image-url("menu/bg.jpg");
+    }
     .is-homepage &{
-        background-image: image-url("menu/bg-hp.jpg");
+        @include breakpoint($bp--l-up) {
+            background-image: image-url("menu/bg-hp.jpg");
+        }
+    }
+
+    .is-content{
+        text-align: center;
+        @include breakpoint($bp--l-up) {
+            text-align: left;
+        }
     }
 }
 
 .menu{
-    @include cf;
     margin: 0;
     padding: 0;
-    width: 50%;
     font-size: 0;
+
+    @include breakpoint($bp--l-up) {
+        @include cf;
+        display: block;
+        width: 50%;
+    }
 }
 
 .menu--wide{
@@ -19,15 +36,25 @@
 }
 
 .menu--left{
-    float: left;
-    padding-left: 65px;
-    text-align: left;
+    display: inline-block;
+    padding-left: 20px;
+    @include breakpoint($bp--l-up) {
+        display: block;
+        padding-left: 65px;
+        float: left;
+        text-align: left;
+    }
 }
 
 .menu--right{
-    float: right;
-    padding-right: 65px;
-    text-align: right;
+    display: inline-block;
+    padding-right: 20px;
+    @include breakpoint($bp--l-up) {
+        display: block;
+        float: right;
+        padding-right: 65px;
+        text-align: right;
+    }
 }
 
 .menu__item,

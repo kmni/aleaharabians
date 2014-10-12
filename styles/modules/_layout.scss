@@ -27,9 +27,6 @@ p{
 // responsivita
 // ====================================
 
-@include breakpoint($bp--s-up) {
-}
-
 .is-envelope{
     width: 100%;
     text-align: center;
@@ -38,8 +35,10 @@ p{
 }
 
 .is-content{
-    width: 1000px;
     text-align: left;
-    margin: 0 auto;
     position: relative;
+    @include breakpoint($bp--l-up) {
+        width: 1000px;
+        margin: 0 auto;
+    }
 }

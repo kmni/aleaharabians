@@ -1,6 +1,10 @@
 .slider-wrapper{
+    display: none;
     height: 149px;
     margin-bottom: 30px;
+    @include breakpoint($bp--l-up) {
+        display: block;
+    }
 }
 
 .slider-w{

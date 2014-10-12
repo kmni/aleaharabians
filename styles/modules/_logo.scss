@@ -1,9 +1,11 @@
 .logo,
 .claim{
     @extend %ir;
-    position: absolute;
-    left: 50%;
-    z-index: 777;
+    @include breakpoint($bp--l-up) {
+        position: absolute;
+        left: 50%;
+        z-index: 777;
+    }
 }
 
 .logo{
@@ -16,30 +18,56 @@
 }
 
 .logo--hp{
-    width: 343px;
-    height: 206px;
-    margin-left: -171px;
-    top: -63px;
+    display: inline-block;
+    width: 257px;
+    height: 209px;
+
+    @include breakpoint($bp--l-up) {
+        display: block;
+        width: 343px;
+        height: 206px;
+        margin-left: -171px;
+        top: -63px;
+    }
+
     a{
-        background-image: image-url("banner/logo-hp.png");
+        background-image: image-url("banner/logo-m.png");
+        @include breakpoint($bp--l-up) {
+            background-image: image-url("banner/logo-hp.png");
+        }
     }
 }
 
 .logo--page{
-    width: 283px;
-    height: 174px;
-    top: -63px;
-    left: 12px;
+
+    display: inline-block;
+    width: 257px;
+    height: 209px;
+
+    @include breakpoint($bp--l-up) {
+        width: 283px;
+        height: 174px;
+        top: -63px;
+        left: 12px;
+    }
+
     a{
-        background-image: image-url("banner/logo.png");
+        background-image: image-url("banner/logo-m.png");
+        @include breakpoint($bp--l-up) {
+            background-image: image-url("banner/logo.png");
+        }
     }
 }
 
 .claim{
+    display: none;
     text-indent: -999px;
     width: 680px;
     height: 222px;
     margin-left: -340px;
     top: 155px;
     background-image: image-url("banner/claim.png");
+    @include breakpoint($bp--l-up) {
+        display: block;
+    }
 }

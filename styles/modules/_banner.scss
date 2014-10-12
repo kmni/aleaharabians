@@ -1,12 +1,22 @@
 .banner-hp-wrapper{
     height: 539px;
-    background-image: image-url("banner/bg-hp.jpg");
+    background-image: image-url("banner/bg-m.jpg");
+    @include breakpoint($bp--l-up) {
+        background-image: image-url("banner/bg-hp.jpg");
+    }
 }
 
-.banner-page-wrapper{
+.banner-hp{
+    text-align: center;
 }
+
 
 .banner-page{
-    height: 155px;
-    background: image-url("banner/bg.jpg") no-repeat 0 0;
+    height: 200px;
+    text-align: center;
+    @include breakpoint($bp--l-up) {
+        text-align: left;
+        height: 155px;
+        background: image-url("banner/bg.jpg") no-repeat 0 0;
+    }
 }
