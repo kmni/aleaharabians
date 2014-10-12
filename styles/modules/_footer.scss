@@ -4,9 +4,13 @@
 }
 
 .footer__info{
+    display: none;
     position: absolute;
     left: 60px;
     top: 67px;
+    @include breakpoint($bp--s-up) {
+        display: block;
+    }
 }
 
 .footer__title{
@@ -51,11 +55,17 @@
 }
 
 .footer__address{
-    position: absolute;
-    right: 60px;
-    top: 20px;
-    text-align: right;
+    text-align: center;
+    padding-top: 20px;
     @extend %osvald-light;
+    @include breakpoint($bp--s-up) {
+        position: absolute;
+        right: 60px;
+        top: 20px;
+        text-align: right;
+        padding-top: 0;
+    }
+
 
     address{
         color: #fff;

@@ -11,7 +11,11 @@ body{
     font-size: 13px;
     margin: 0;
     padding: 0;
+    margin-top: 76px;
     background: image-url("content/bg.png");
+    @include breakpoint($bp--s-up) {
+        margin-top: 0;
+    }
 }
 
 h1, h2, h3, h4{

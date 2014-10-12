@@ -1,6 +1,10 @@
 .banner-hp-wrapper{
-    height: 539px;
+    height: 250px;
     background-image: image-url("banner/bg-m.jpg");
+    background-position: center bottom;
+    @include breakpoint($bp--s-up) {
+        height: 539px;
+    }
     @include breakpoint($bp--l-up) {
         background-image: image-url("banner/bg-hp.jpg");
     }

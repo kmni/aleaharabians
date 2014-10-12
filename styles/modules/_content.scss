@@ -7,7 +7,9 @@
 }
 
 .content-hp{
-    width: 480px;
+    @include breakpoint($bp--s-up) {
+        width: 480px;
+    }
 
     h2{
         @extend %osvald;
@@ -39,13 +41,19 @@
 // ====================================
 
 .content-page{
-    width: 684px;
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-bottom: 120px;
+    @include breakpoint($bp--s-up) {
+        width: 684px;
+        padding-top: 20px;
+        padding-left: 40px;
+        padding-bottom: 120px;
+    }
 
     img{
         margin-bottom: 20px;
+        width: 100%;
+        @include breakpoint($bp--s-up) {
+            width: auto;
+        }
     }
 
     p{
@@ -53,20 +61,34 @@
         line-height: 1.5em;
         font-family: "Georgia";
         font-style: italic;
-        padding: 0px 52px 20px 52px;
+        padding: 20px;
+        @include breakpoint($bp--s-up) {
+            padding: 0px 52px 20px 52px;
+        }
 
         img{
             margin-bottom: 0;
+            width: auto;
+            @include breakpoint($bp--s-up) {
+            }
         }
     }
 }
 
 .content__title{
-    width: 644px;
-    font-size: 48px;
+    text-align: center;
+    font-size: 30px;
     @extend %osvald-light;
     color: #008f95;
     padding-bottom: 25px;
-    padding-left: 52px;
+    margin-top: 25px;
     background: image-url("content/bg-title.png") repeat-x 0 bottom;
+
+    @include breakpoint($bp--s-up) {
+        width: 644px;
+        text-align: left;
+        font-size: 48px;
+        padding-left: 52px;
+        margin-top: 0;
+    }
 }
