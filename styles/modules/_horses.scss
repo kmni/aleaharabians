@@ -10,7 +10,10 @@
 }
 
 .horses__item__col{
-    padding: 20px 40px;
+    padding: 20px;
+    @include breakpoint($bp--s-up) {
+        padding: 20px 40px;
+    }
     &.is-primary{
         @include breakpoint($bp--l-up) {
             float: right;
@@ -53,6 +56,12 @@
 }
 
 .horses__item__links{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @include breakpoint($bp--l-up) {
+        list-style: disc;
+    }
     li{
         font-size: 22px;
         font-style: italic;
@@ -60,6 +69,15 @@
     }
     a{
         color: #7a7500;
+    }
+}
+
+.horses__item__photo{
+    img{
+        width: 100%;
+        @include breakpoint($bp--s-up) {
+            width: auto;
+        }
     }
 }
 
