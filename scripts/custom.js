@@ -46,10 +46,12 @@ $(".fancybox-video").click(function() {
 
 if( $(".slider").length > 0 ){
   $('.slider').bjqs({
-    height      : 299,
+    height      : 600,
     width       : 920,
     showcontrols: false,
-    showmarkers: false
+    showmarkers: false,
+    responsive: true,
+    randomstart: true
   });
 }
 
